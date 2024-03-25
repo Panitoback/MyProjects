@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <title>Document</title>
+  <style>
+    :root{
+      --mobile: 375px;
+      --desktop: 1440px;
+      --white: hsl(0, 0%, 100%);
+      --light-gray: hsl(212, 45%, 89%);
+      --grayish-blue: hsl(220, 15%, 55%);
+      --dark-blue: hsl(218, 44%, 22%);
+      --paragraph: 15px;
+    }
+    body{
+      font-family: 'Outfit', sans-serif;
+    }
+    section{
+      display: grid;
+      width: 100%;
+      height: 100vh;
+      place-items: center;
+      background-color: var(--light-gray);
+    }
+    .container{
+      background-color: var(--white);
+      border-radius: 20px;
+      display: flex;
+    }
+    .container-qr{
+      width: 375px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+    .container-qr figure{
+      margin: 20px 20px 0px 20px;
+    }
+    .container-qr figure img{
+      border-radius: 20px;
+      width: 100%;
+    }
+    .container-qr p:nth-child(2){
+      font-weight: bold;
+      font-size: 20px;
+      padding: 0 40px 0 40px;
+    }
+    .container-qr p:nth-child(3){
+      font-size: var(--paragraph);
+      padding: 0 60px 40px 60px;
+      color: var(--grayish-blue);
+    }
+    @media (max-width: 375px){
+      .container-qr{
+        width: 300px;
+      }
+      .container-qr figure img{
+        width: 100%;
+        height: 100%;
+      }
+      .container-qr p:nth-child(2){
+        padding: 0 20px 0 20px;
+      }
+      .container-qr p:nth-child(3){
+        padding: 0 30px 20px 30px;
+        margin-top: 0;
+      }
+    }
+  </style>
+  <section>
+    <div class="container">
+      <div class="container-qr">
+        <figure>
+          <img src="./images/image-qr-code.png" alt="qr code">
+        </figure>
+        <p>
+          Improve your front-end skills by building projects
+        </p>
+        <p>
+          Scan the QR code to visit Frontend Mentor and take
+          you coding skills to the next level
+        </p>
+      </div>
+      
+    </div>
+  </section>
+</head>
+<body>
+  
+</body>
+</html>
